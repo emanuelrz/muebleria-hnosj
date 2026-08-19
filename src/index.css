@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-color: #12100E;
+    color: #FAF6F0;
+  }
+
+  body {
+    background-color: #12100E;
+    color: #FAF6F0;
+    overflow-x: hidden;
+    font-family: 'Inter', -apple-system, sans-serif;
+  }
+
+  /* Custom dark luxury scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #181512;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #4A3528;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A0522D;
+  }
+}
+
+.text-editorial-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Card hover glow */
+.card-dark-luxury {
+  background: linear-gradient(180deg, #221D19 0%, #191512 100%);
+  border: 1px solid rgba(160, 82, 45, 0.18);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-dark-luxury:hover {
+  border-color: rgba(212, 164, 55, 0.4);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.6);
+  transform: translateY(-2px);
+}
+
+.glow-warm {
+  box-shadow: 0 0 50px -10px rgba(160, 82, 45, 0.25);
+}
+
+.glow-gold {
+  box-shadow: 0 0 40px -8px rgba(212, 164, 55, 0.2);
+}
